@@ -1,7 +1,7 @@
 import antfu from '@antfu/eslint-config'
 
 export default antfu({
-     formatters: {
+  formatters: {
     /**
      * Format CSS, LESS, SCSS files, also the `<style>` blocks in Vue
      * By default uses Prettier
@@ -17,6 +17,9 @@ export default antfu({
      * Supports Prettier and dprint
      * By default uses Prettier
      */
-    markdown: 'prettier'
-  }
+    markdown: 'prettier',
+  },
+
+  typescript: true,
+  vue: true,
 })
